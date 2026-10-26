@@ -54,7 +54,7 @@ function App() {
 
           <nav aria-label="Navegación principal">
             <a href="#inicio">Inicio</a>
-            <a href="./modalidades.tsx">Modalidades</a>
+            <a href="/modalidades">Modalidades</a>
             <a href="#como-funciona">Cómo funciona</a>
             <a href="#contacto">Contacto</a>
           </nav>

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import './modalidades.css'
 import logo from './assets/skillmatch-simbolo-tres-personas.png'
 import portada from './assets/portada-estudiantes.jpg'
 import banner from './assets/oportunidades-banner.jpg'
