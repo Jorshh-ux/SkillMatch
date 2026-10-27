@@ -129,7 +129,7 @@ function Modalidades() {
                 <div className="modalidad-card-copy">
                   <h2>{tarjeta.categoria}</h2>
                   <p>{tarjeta.descripcion}</p>
-                  <a href="/#contacto">Más información →</a>
+                  {tarjeta.categoria === 'Servicio Social' ? (<Link to="/modalidades/servicio-social">Más información →</Link>) : (<a href="/#contacto">Más información →</a>)}
                 </div>
               </article>
             ))}

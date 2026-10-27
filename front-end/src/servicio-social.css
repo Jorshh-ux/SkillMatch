@@ -1,0 +1,392 @@
+.ss-page {
+  background: var(--fondo);
+}
+
+.ss-hero {
+  min-height: 350px;
+  position: relative;
+  color: white;
+  background-position: center 42%;
+  background-size: cover;
+}
+
+.ss-hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(90deg, #310016f5, #4b0827dd 48%, #31001640);
+}
+
+.ss-hero-inner,
+.ss-container {
+  width: min(1280px, 90%);
+  margin: 0 auto;
+}
+
+.ss-hero-inner {
+  min-height: 350px;
+  padding: 20px 0 24px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ss-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 13px;
+}
+
+.ss-breadcrumbs a:hover {
+  color: var(--dorado);
+}
+
+.ss-hero-copy {
+  max-width: 650px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ss-emblem {
+  width: 60px;
+  height: 60px;
+  flex: 0 0 60px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--dorado);
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.ss-hero h1 {
+  margin: 0 0 8px;
+  color: white;
+  font-size: clamp(34px, 5vw, 54px);
+}
+
+.ss-hero-copy p:last-child {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.ss-facts {
+  display: flex;
+  gap: 22px;
+}
+
+.ss-facts p {
+  margin: 0;
+  padding-right: 20px;
+  border-right: 1px solid #ffffff77;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.ss-facts p:last-child {
+  border: 0;
+}
+
+.ss-facts strong {
+  color: #f5d568;
+}
+
+.ss-quote {
+  margin: 0;
+  color: white;
+  font-style: italic;
+}
+
+.ss-intro {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.ss-intro h2,
+.ss-tasks h2,
+.ss-opportunities h2,
+.ss-faq-help h2 {
+  margin: 0 0 10px;
+  color: var(--vino);
+  font-size: clamp(25px, 3vw, 32px);
+}
+
+.ss-intro > div > p:not(.eyebrow) {
+  color: #49434a;
+  line-height: 1.6;
+}
+
+.ss-intro small {
+  color: #777;
+}
+
+.ss-note {
+  margin: 20px 0 12px;
+  padding: 18px;
+  border-radius: 10px;
+  color: var(--vino);
+  background: #f0ebe4;
+  line-height: 1.5;
+}
+
+.ss-requirements {
+  padding: 24px;
+  border-radius: 10px;
+  color: white;
+  background:
+    linear-gradient(120deg, #390319ed, #68133aaa),
+    url("./assets/oportunidades-banner.jpg") center / cover;
+}
+
+.ss-requirements h2 {
+  color: white;
+  font-size: 23px;
+}
+
+.ss-requirements ul {
+  padding-left: 20px;
+  line-height: 1.55;
+}
+
+.ss-requirements li {
+  margin-bottom: 8px;
+}
+
+.ss-tasks {
+  padding-top: 12px;
+  padding-bottom: 42px;
+}
+
+.ss-tasks > p:not(.eyebrow) {
+  color: #625961;
+}
+
+.ss-task-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.ss-task-card {
+  padding: 18px 14px;
+  border: 1px solid #e1d9d5;
+  border-radius: 9px;
+  text-align: center;
+  background: white;
+}
+
+.ss-task-card > span {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 12px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  background: var(--vino);
+  font-size: 24px;
+}
+
+.ss-task-card h3 {
+  color: var(--vino);
+  font-size: 15px;
+}
+
+.ss-task-card p {
+  color: #625961;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.ss-opportunities {
+  padding: 36px 0 40px;
+  color: white;
+  background: var(--vino-oscuro);
+}
+
+.ss-opportunities h2 {
+  color: white;
+}
+
+.ss-opportunities > div > p:not(.eyebrow) {
+  color: #f2e6eb;
+}
+
+.ss-opportunity-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.ss-opportunity-card {
+  overflow: hidden;
+  border: 1px solid #b18a3e;
+  border-radius: 9px;
+  background: var(--vino);
+}
+
+.ss-opportunity-card img {
+  width: 100%;
+  height: 125px;
+  display: block;
+  object-fit: cover;
+}
+
+.ss-opportunity-card > div {
+  padding: 14px;
+}
+
+.ss-opportunity-card h3 {
+  min-height: 38px;
+  font-size: 15px;
+}
+
+.ss-opportunity-card p,
+.ss-opportunity-card small {
+  color: #f2e6eb;
+  font-size: 13px;
+}
+
+.ss-opportunity-card .button {
+  min-height: 36px;
+  padding: 8px 14px;
+  border: 0;
+  font-size: 12px;
+}
+
+.ss-faq-help {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 28px;
+}
+
+.ss-question {
+  border-bottom: 1px solid #ded7d3;
+}
+
+.ss-question summary {
+  padding: 14px 2px;
+  color: var(--vino);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ss-question p {
+  color: #5e565d;
+  line-height: 1.5;
+}
+
+.ss-help {
+  align-self: center;
+  padding: 24px;
+  border-radius: 12px;
+  background: #f0ebe4;
+}
+
+.ss-help h2 {
+  font-size: 23px;
+}
+
+.ss-help p:not(.eyebrow) {
+  color: #554d54;
+  line-height: 1.5;
+}
+
+.ss-final {
+  color: white;
+  background:
+    linear-gradient(90deg, #390319f2, #5b0f2ebd),
+    url("./assets/oportunidades-banner.jpg") center / cover;
+}
+
+.ss-final > div {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.ss-final h2 {
+  margin: 0 0 8px;
+  font-size: clamp(22px, 3vw, 32px);
+}
+
+.ss-final p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .ss-task-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ss-opportunity-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .ss-hero,
+  .ss-hero-inner {
+    min-height: 470px;
+  }
+
+  .ss-hero-inner {
+    padding: 16px 0 22px;
+  }
+
+  .ss-breadcrumbs {
+    gap: 6px;
+    font-size: 11px;
+  }
+
+  .ss-hero-copy {
+    gap: 12px;
+  }
+
+  .ss-emblem {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+  }
+
+  .ss-facts {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ss-facts p {
+    border: 0;
+  }
+
+  .ss-intro,
+  .ss-faq-help {
+    grid-template-columns: 1fr;
+  }
+
+  .ss-task-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ss-opportunity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ss-final > div {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

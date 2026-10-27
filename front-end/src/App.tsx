@@ -146,7 +146,7 @@ function App() {
                   <div className="modality-copy">
                     <h3>{modalidad.titulo}</h3>
                     <p>{modalidad.texto}</p>
-                    <a href="#contacto">Ver más →</a>
+                    <a href="/modalidades">Ver más →</a>
                   </div>
                 </article>
               ))}
